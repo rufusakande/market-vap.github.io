@@ -1,0 +1,163 @@
+
+/******************************************************************************************************/
+/********************************************* Contact ************************************************/
+/******************************************************************************************************/
+.contact {
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact_infos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.info_box{
+    width: 155px;
+    height: 90px;
+    padding: 15px 15px;
+    box-shadow: 2px 2px 15px 3px rgb(107, 107, 107);
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:330px) {
+    .contact_infos{
+        gap: 4px;
+    }
+    
+    .info_box{
+        padding: 12px 5px;
+    }
+}
+
+.info_box svg{
+    margin-bottom: 10px;
+}
+
+.map_form_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0px;
+}
+.map_form{
+    
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 6px gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+@media screen and (max-width:920px) {
+    .map_form{
+        width: min-content;
+    }
+}
+
+.map{
+    width: 600px;
+    height: auto;
+}
+
+.map iframe{
+    width:100%;
+}
+
+@media screen and (max-width:620px) {
+    .map{
+        width:100%;
+    }
+    .map iframe{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .map{
+        width:100%;
+    }
+    .map iframe{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:305px) {
+    .map{
+        width:100%;
+    }
+    .map iframe{
+        width:100%;
+    }
+}
+
+.form{
+    width: 300px;
+    height: auto;
+}
+
+.form form{
+    width: 100%;
+    height: auto;
+    padding: 20px 15px;
+    text-align: center;
+
+}
+
+.form form h4{
+    margin-bottom: 10px;
+}
+
+.form form input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.form form textarea{
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 13px;
+    background-color: rgb(145, 65, 219);
+    color: white;
+    padding: 10px;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+.form form button{
+    width: fit-content;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+}
+
+.form form button:hover{
+    background-color: rgb(80, 2, 153);
+}
+
+.form form textarea::placeholder,
+.form form input::placeholder{
+    color: white;
+}
+

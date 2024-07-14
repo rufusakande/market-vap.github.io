@@ -1,0 +1,260 @@
+/******************************************************************************************************/
+/********************************************* Général ************************************************/
+/******************************************************************************************************/
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+.btn1 {
+  border: 1px solid #0d6efd;
+  background-color: #0d6efd;
+  border-radius: 8px;
+  padding: 10px;
+  width: fit-content;
+  margin: 15px 0px;
+  color: white;
+  display: inline-block;
+}
+
+.btn2 {
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  width: fit-content;
+  margin: 15px;
+  color: white;
+  font-size: 25px;
+  display: inline-block;
+}
+
+.section_heading {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.section_heading span {
+  display: block;
+  margin: 15px 2px;
+  font-size: clamp(32px, 7vw, 32px);
+  color: #464749;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section_heading h2 {
+  color: black;
+}
+
+section{
+  width: 100px;
+  margin: auto;
+  padding: 0px;
+}
+
+/******************************************************************************************************/
+/********************************************* Le header ************************************************/
+/******************************************************************************************************/
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 15px;
+    position: fixed;
+    top: 0px;
+    background-color: #212529;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width:780px) {
+    nav .logo{
+        display: inline;
+        float: right;
+    }
+}
+
+nav .navigation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav .navigation a {
+    color: white;
+    font-size: 23px;
+    transition: 0.5s ease-in-out;
+}
+
+nav .navigation a:hover,
+nav .logo:hover{
+    color: white;
+    font-size: 25px;
+}
+
+nav .menu_burger{
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .menu_retour {
+  display: none;
+  color: white;
+  font-style: normal;
+  transition: 0.5s ease-in-out;
+}
+
+/******************************************************************************************************/
+/********************************************* A propos ************************************************/
+/******************************************************************************************************/
+.apropos{
+  width: 100%;
+  margin-top: 60px;
+}
+.apropos .image_accueil{
+  width: 100%;
+}
+
+.apropos .image_accueil img{
+  width: 100%;
+  min-height: 100vh;
+}
+
+/******************************************************************************************************/
+/********************************************* Services ************************************************/
+/******************************************************************************************************/
+
+.services{
+  width: 100%;
+  margin: auto;
+  padding: 0px;
+}
+
+.services_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 1.5rem;
+  padding: 10px 5px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.services_container .services_box {
+  text-align: center;
+  border: 0.5px solid #fff;
+  box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.493);
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.services_container .services_box img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px 12px 0px 0px;
+}
+.services_container .services_box span {
+  font-size: clamp(18px, 5vw, 25px);
+  font-weight: 400;
+  color: #6c6d6e;
+  margin: 10px 2px;
+  display: block;
+}
+.services_container .services_box h4{
+    color: rgb(42, 151, 42);
+    font-size: 24px;
+}
+/**
+ *  Section autres
+ */
+.autres{
+  width: 100%;
+}
+.div_autres {
+  width: 100%;
+  padding: 40px 15px;
+  text-align: center;
+  color: white;
+}
+
+.div_autres1 {
+  background-color: gray;
+}
+.div_autres2 {
+  background-color: green;
+}
+.div_autres3 {
+  background-color: blue;
+}
+
+/******************************************************************************************************/
+/********************************************* Credit ************************************************/
+/******************************************************************************************************/
+
+.credit {
+  width: 100%;
+  background-color: #212529;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.credit div {
+  width: 100%;
+  text-align: center;
+}
+
+/******************************************************************************************************/
+/********************************************* Média screen ************************************************/
+/******************************************************************************************************/
+
+@media screen and (max-width: 780px) {
+  nav .menu_burger {
+    display: flex;
+  }
+
+  nav .navigation {
+    display: block;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: -100%;
+    height: 86vh;
+    width: 86vw;
+    padding: 10px 25px;
+    transition: 0.5s ease-in-out;
+  }
+
+  nav .navigation a {
+    color: #0d6efd;
+    padding: 15px 5px;
+    display: block;
+    margin: 15px 5px;
+  }
+  nav .navigation a:hover {
+    font-size: 28px;
+    color: #0d6efd;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .accueil {
+    padding-top: 100px;
+  }
+}
